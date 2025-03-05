@@ -15,7 +15,6 @@ const Home = () => {
             item.category === "men's clothing" || item.category === "women's clothing"
         )
     })
-    console.log(filteredProducts)
     
   return (
     <div>
