@@ -7,7 +7,7 @@ import { CartContext } from '../contexts/CartContext'
 //import icons
 import { BsBag } from 'react-icons/bs'
 //import Logo 
-import Logo from '../assets/img/Logo.webp';
+import Logo from '/public/img/Logo.webp';
 import { WiNightCloudy } from 'react-icons/wi'
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
     })
   })
   return (
-  <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all h-[60px] flex items-center`}>
+  <header className={`${isActive ? 'bg-white py-4 shadow-md ' : 'bg-none py-6 '}  fixed w-full z-10 transition-all h-[60px] flex items-center`}>
 <div className='container mx-auto flex items-center justify-between h-full'>
    {/* Logo */}
       <Link to="/">
