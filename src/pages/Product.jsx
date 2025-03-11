@@ -1,10 +1,16 @@
-import products from "../Product.json";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsEyeFill, BsPlus } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import products from "../Product.json";
 
 const Product = () => {
   const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false }); // Triggers on every scroll
+  }, []);
 
   // Filter products based on search input
   const filteredProducts = products.filter((product) =>
@@ -13,12 +19,12 @@ const Product = () => {
 
   return (
     <div className="pt-10 p-5 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6" data-aos="fade-down">
         Product List
       </h1>
 
       {/* Search Input */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-6" data-aos="fade-up">
         <input
           type="text"
           placeholder="Search products..."
@@ -34,9 +40,13 @@ const Product = () => {
           filteredProducts.map((product) => {
             const { id, category, name, price, currency, description, stock, rating, image } = product;
             return (
-              <div key={id} className="border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 p-4 bg-white">
+              <div
+                key={id}
+                className="border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 p-4 bg-white"
+                data-aos="fade-up"
+              >
                 {/* Image Container */}
-                <div className="relative group">
+                <div className="relative group" data-aos="zoom-in">
                   <div className="w-full h-[300px] flex justify-center items-center rounded-lg overflow-hidden">
                     <img
                       className="max-h-[160px] transition-transform duration-300 group-hover:scale-110"
@@ -46,10 +56,11 @@ const Product = () => {
                   </div>
 
                   {/* Buttons */}
-                  <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button
-                      className="flex items-center justify-center w-10 h-10 bg-red-500 text-white rounded-full shadow-md hover:bg-red-600 transition"
-                    >
+                  <div
+                    className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    data-aos="fade-left"
+                  >
+                    <button className="flex items-center justify-center w-10 h-10 bg-red-500 text-white rounded-full shadow-md hover:bg-red-600 transition">
                       <BsPlus className="text-2xl" />
                     </button>
                     <Link
@@ -62,7 +73,7 @@ const Product = () => {
                 </div>
 
                 {/* Product Info */}
-                <div className="mt-4 text-center">
+                <div className="mt-4 text-center" data-aos="fade-up">
                   <div className="text-xs uppercase tracking-wider text-gray-500">{category}</div>
                   <Link to={`/product/${id}`}>
                     <h2 className="text-lg font-semibold mt-2 hover:text-red-500 transition">{name}</h2>
@@ -80,7 +91,9 @@ const Product = () => {
             );
           })
         ) : (
-          <p className="text-center text-gray-600 col-span-3">No products found.</p>
+          <p className="text-center text-gray-600 col-span-3" data-aos="fade-up">
+            No products found.
+          </p>
         )}
       </div>
     </div>

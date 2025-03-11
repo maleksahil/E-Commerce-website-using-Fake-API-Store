@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "image": "/img/category_1.webp",
+    "name": "Accessories",
+    "item": 22
+  },
+  {
+    "id": 2,
+    "image": "/img/category_2.webp",
+    "name": "Baby",
+    "item": 10
+  },
+  {
+    "id": 3,
+    "image": "/img/category_3.webp",
+    "name": "Baby (T Shirt)",
+    "item": 3
+  },
+  {
+    "id": 4,
+    "image": "/img/category_4.webp",
+    "name": "Best Selling",
+    "item": 68
+  },
+  {
+    "id": 5,
+    "image": "/img/category_5.webp",
+    "name": "Best-Selling (Jewelry)",
+    "item": 7
+  },
+  {
+    "id": 6,
+    "image": "/img/category_6.webp",
+    "name": "Bracelets",
+    "item": 1
+  },
+  {
+    "id": 7,
+    "image": "/img/category_7.webp",
+    "name": "Brooches and Pins",
+    "item": 2
+  },
+  {
+    "id": 8,
+    "image": "/img/category_8.webp",
+    "name": "Cap",
+    "item": 2
+  },
+  {
+    "id": 9,
+    "image": "/img/category_9.webp",
+    "name": "Diamond",
+    "item": 6
+  },
+  {
+    "id": 10,
+    "image": "/img/category_10.webp",
+    "name": "Earphone",
+    "item": 2
+  },
+  {
+    "id": 11,
+    "image": "/img/category_11.webp",
+    "name": "Earrings",
+    "item": 1
+  },
+  {
+    "id": 12,
+    "image": "/img/category_12.webp",
+    "name": "Featured (Electronics)",
+    "item": 7
+  },
+  {
+    "id": 13,
+    "image": "/img/category_13.webp",
+    "name": "Featured (Fashion)",
+    "item": 12
+  },
+  {
+    "id": 14,
+    "image": "/img/category_14.webp",
+    "name": "Featured (Jewelry)",
+    "item": 13
+  },
+  {
+    "id": 15,
+    "image": "/img/category_15.webp",
+    "name": "Featured (T Shirt)",
+    "item": 9
+  },
+  {
+    "id": 16,
+    "image": "/img/category_16.webp",
+    "name": "Featured Product",
+    "item": 68
+  },
+  {
+    "id": 17,
+    "image": "/img/category_17.webp",
+    "name": "Footwear",
+    "item": 16
+  },
+  {
+    "id": 18,
+    "image": "/img/category_18.webp",
+    "name": "Gold",
+    "item": 8
+  },
+  {
+    "id": 19,
+    "image": "/img/category_19.webp",
+    "name": "Headphone",
+    "item": 1
+  },
+  {
+    "id": 20,
+    "image": "/img/category_20.webp",
+    "name": "Kid (T Shirt)",
+    "item": 3
+  },
+  {
+    "id": 21,
+    "image": "/img/category_21.webp",
+    "name": "Kids",
+    "item": 9
+  },
+  {
+    "id": 22,
+    "image": "/img/category_22.webp",
+    "name": "Men",
+    "item": 14
+  },
+  {
+    "id": 23,
+    "image": "/img/category_23.webp",
+    "name": "Men (T Shirt)",
+    "item": 3
+  },
+  {
+    "id": 24,
+    "image": "/img/category_24.webp",
+    "name": "Necklaces",
+    "item": 3
+  },
+  {
+    "id": 25,
+    "image": "/img/category_25.webp",
+    "name": "New (Fashion)",
+    "item": 17
+  },
+  {
+    "id": 26,
+    "image": "/img/category_26.webp",
+    "name": "New Arrivals",
+    "item": 68
+  },
+  {
+    "id": 27,
+    "image": "/img/category_27.webp",
+    "name": "New Arrivals (Electronics)",
+    "item": 6
+  },
+  {
+    "id": 28,
+    "image": "/img/category_28.webp",
+    "name": "On-Selling (Jewelry)",
+    "item": 4
+  },
+  {
+    "id": 29,
+    "image": "/img/category_29.webp",
+    "name": "Rings",
+    "item": 5
+  },
+  {
+    "id": 30,
+    "image": "/img/category_30.webp",
+    "name": "Sale",
+    "item": 37
+  },
+  {
+    "id": 31,
+    "image": "/img/category_31.webp",
+    "name": "Silver",
+    "item": 9
+  },
+  {
+    "id": 32,
+    "image": "/img/category_32.webp",
+    "name": "Smartphone",
+    "item": 1
+  },
+  {
+    "id": 33,
+    "image": "/img/category_33.webp",
+    "name": "Smartwatch",
+    "item": 5
+  },
+  {
+    "id": 34,
+    "image": "/img/category_34.webp",
+    "name": "Summer Styles",
+    "item": 30
+  },
+  {
+    "id": 35,
+    "image": "/img/category_30.webp",
+    "name": "Top Rated",
+    "item": 21
+  },
+  {
+    "id": 36,
+    "image": "/img/category_36.webp",
+    "name": "Top Rated (Jewelry)",
+    "item": 7
+  },
+  {
+    "id": 37,
+    "image": "/img/category_37.webp",
+    "name": "Trending",
+    "item": 6
+  },
+  {
+    "id": 38,
+    "image": "/img/category_38.webp",
+    "name": "Winter Fashion",
+    "item": 6
+  },
+  {
+    "id": 39,
+    "image": "/img/category_39.webp",
+    "name": "Women",
+    "item": 20
+  },
+  {
+    "id": 40,
+    "image": "/img/category_40.webp",
+    "name": "Women (T Shirt)",
+    "item": 3
+  }
+]
