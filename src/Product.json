@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "category": "Electronics",
+      "name": "Apple iPhone 15 Pro",
+      "price": 134900,
+      "currency": "INR",
+      "description": "Experience the power of the A17 Pro chip with a titanium design, always-on display, and an advanced 48MP camera.",
+      "stock": "In Stock",
+      "rating": 4.9,
+      "image": "/img/product_1.jpeg"
+    },
+    {
+      "id": 2,
+      "category": "Electronics",
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 129999,
+      "currency": "INR",
+      "description": "A powerful smartphone with an AI-powered camera, Snapdragon 8 Gen 3, and S Pen support.",
+      "stock": "In Stock",
+      "rating": 4.8,
+      "image": "/img/product_2.avif"
+    },
+    {
+      "id": 3,
+      "category": "Fashion",
+      "name": "Nike Air Jordan 1 Retro",
+      "price": 14999,
+      "currency": "INR",
+      "description": "Classic basketball sneakers with premium leather, cushioned soles, and iconic Jordan branding.",
+      "stock": "Low Stock",
+      "rating": 4.7,
+      "image": "/img/product_3.webp"
+    },
+    {
+      "id": 4,
+      "category": "Fashion",
+      "name": "Levi’s 511 Slim Fit Jeans",
+      "price": 3499,
+      "currency": "INR",
+      "description": "Stylish slim-fit jeans made from premium denim, offering a comfortable and modern look.",
+      "stock": "In Stock",
+      "rating": 4.6,
+      "image": "/img/product_4.webp"
+    },
+    {
+      "id": 5,
+      "category": "Home Appliances",
+      "name": "Dyson V12 Cordless Vacuum Cleaner",
+      "price": 55900,
+      "currency": "INR",
+      "description": "Powerful suction with intelligent laser detection for the cleanest home experience.",
+      "stock": "In Stock",
+      "rating": 4.8,
+      "image": "/img/product_5.jpg"
+    },
+    {
+      "id": 6,
+      "category": "Home Appliances",
+      "name": "LG 55-inch OLED 4K Smart TV",
+      "price": 129990,
+      "currency": "INR",
+      "description": "Stunning OLED display with Dolby Vision and AI-powered 4K upscaling for an immersive experience.",
+      "stock": "In Stock",
+      "rating": 4.9,
+      "image": "/img/product_6.avif"
+    },
+    {
+      "id": 7,
+      "category": "Gaming",
+      "name": "Sony PlayStation 5",
+      "price": 59990,
+      "currency": "INR",
+      "description": "Next-gen gaming console with ultra-high-speed SSD and stunning 4K gameplay.",
+      "stock": "In Stock",
+      "rating": 5.0,
+      "image": "/img/product_7.webp"
+    },
+    {
+      "id": 8,
+      "category": "Gaming",
+      "name": "Xbox Series X",
+      "price": 54990,
+      "currency": "INR",
+      "description": "Powerful 4K gaming console with 120 FPS support and an expansive game library.",
+      "stock": "In Stock",
+      "rating": 4.9,
+      "image": "/img/product_8.jpg"
+    },
+    {
+      "id": 9,
+      "category": "Wearables",
+      "name": "Apple Watch Series 9",
+      "price": 41900,
+      "currency": "INR",
+      "description": "Advanced smartwatch with health tracking, always-on display, and crash detection.",
+      "stock": "In Stock",
+      "rating": 4.8,
+      "image": "/img/product_9.jpg"
+    },
+    {
+      "id": 10,
+      "category": "Wearables",
+      "name": "Samsung Galaxy Watch 6",
+      "price": 32999,
+      "currency": "INR",
+      "description": "Premium smartwatch with advanced health sensors, AMOLED display, and LTE connectivity.",
+      "stock": "In Stock",
+      "rating": 4.7,
+      "image": "/img/product_10.webp"
+    }
+  ]
+  
