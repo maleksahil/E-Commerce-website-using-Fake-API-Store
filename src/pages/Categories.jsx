@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import categories from "../Categories.json";
 
 const CollectionsPage = () => {
+  
     const [searchTerm, setSearchTerm] = useState("");
   useEffect(() => {
     AOS.init({ duration: 1000, once: false, });
   }, []);
 
    // Filter products based on search input
-    const filteredProducts = products.filter((product) =>
+    const filteredProducts = categories.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
   
@@ -38,8 +39,10 @@ const CollectionsPage = () => {
       </header>
 
       <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {categories.map((category, index) => (
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((category, index) => (
             <div
               key={index}
               className="overflow-hidden transition-shadow duration-300 transform hover:scale-105"
@@ -57,8 +60,14 @@ const CollectionsPage = () => {
                 <p>Items {category.item}</p>
               </div>
             </div>
-          ))}
-        </div>
+          ))
+        ) : (
+          <p className="text-center text-gray-600 col-span-3" data-aos="fade-up">
+            No products found.
+          </p>
+        )}
+      </div>
+
       </main>
     </div>
   );

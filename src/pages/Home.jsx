@@ -5,21 +5,23 @@ import Product from "../components/Product";
 import Hero from "../components/Hero";
 import CountdownOffer from "../components/CountdownOffer";
 import ProductSlider from "../components/ProductSlider";
+import TestimonialSlider from "../components/Testimonial"
 
 // Import JSON data
 import productData from "../Product.json";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    
+    const navigate = useNavigate();
   // Get products from ProductContext
   const { products } = useContext(ProductContext);
 
-   useEffect(() => {
-      AOS.init({ duration: 1000, once: false });
-    }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
 
   // Get only men's and women's clothing category
   const filteredProducts = products.filter(
@@ -27,12 +29,19 @@ const Home = () => {
       item.category === "men's clothing" || item.category === "women's clothing"
   );
 
+  const viewAll = () =>{
+    navigate("/product")
+  }
+
   return (
     <div>
       <Hero data-aos="zoom-in" />
 
       {/* Banner Section */}
-      <div className="w-full h-[500px] bg-blue-400 flex flex-col md:flex-row p-10 justify-around items-center" data-aos="zoom-in">
+      <div
+        className="w-full h-[500px] bg-blue-400 flex flex-col md:flex-row p-10 justify-around items-center"
+        data-aos="zoom-in"
+      >
         {/* Left Banner */}
         <div className="relative bg-[#cccccc] w-[40%] h-[80%] rounded-lg shadow-lg overflow-hidden">
           <img
@@ -78,8 +87,53 @@ const Home = () => {
       {/* Countdown Offer Section */}
       <CountdownOffer />
 
-<ProductSlider productData={productData} />
-    
+      <div
+        className="flex justify-center text-4xl p-7 font-semibold"
+        data-aos="fade-up"
+      >
+        <h1>Featured Collections</h1>
+      </div>
+      
+      <ProductSlider productData={productData} />
+
+      <div className="flex justify-center p-5">
+      <button onClick={viewAll} className="bg-blue-500 text-white px-5 py-2 rounded-xl cursor-pointer text-semibold">View All</button>
+      </div>
+
+      <div
+        className="flex justify-center text-4xl p-7 font-semibold"
+        data-aos="fade-up"
+      >
+        <h1>New Arrivals</h1>
+      </div>
+      <ProductSlider productData={productData} />
+
+      <div className="flex justify-center p-5">
+      <button onClick={viewAll} className="bg-blue-500 text-white px-5 py-2 rounded-xl cursor-pointer text-semibold">View All</button>
+      </div>
+
+<div className="bg-slate-400 text-white p-5 text-2xl ">
+
+      <marquee>
+      <div className="flex space-x-10 ">
+
+        <p>Returns accepted for 30 days</p>
+        <p>Free return shipping</p>
+        <p>No restocking fee</p>
+        <p>No final sale items</p>
+        <p>100% Payment Secure</p>
+        <p>Online Support</p>
+        <p>Returns accepted for 30 days</p>
+        <p>Free return shipping</p>
+        <p>No restocking fee</p>
+        <p>No final sale items</p>
+        <p>100% Payment Secure</p>
+        <p>Online Support</p>
+      </div>
+      </marquee>
+</div>
+
+<TestimonialSlider/>
     </div>
   );
 };
