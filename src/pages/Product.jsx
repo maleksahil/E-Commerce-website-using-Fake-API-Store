@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import products from "../Product.json";
+import Hero from "../components/Hero"
 
 const Product = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -18,10 +19,13 @@ const Product = () => {
   );
 
   return (
-    <div className="pt-10 p-5 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6" data-aos="fade-down">
+    <div className=" bg-gray-100 min-h-screen">
+
+     <Hero/>
+      <h1 className="text-3xl mt-5 font-bold text-center text-gray-800 mb-6" data-aos="fade-down">
         Product List
       </h1>
+
 
       {/* Search Input */}
       <div className="flex justify-center mb-6" data-aos="fade-up">
@@ -35,7 +39,7 @@ const Product = () => {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 p-10">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => {
             const { id, category, name, price, currency, description, stock, rating, image } = product;

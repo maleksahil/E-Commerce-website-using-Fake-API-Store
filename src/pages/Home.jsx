@@ -43,14 +43,14 @@ const Home = () => {
         data-aos="zoom-in"
       >
         {/* Left Banner */}
-        <div className="relative bg-[#cccccc] w-[40%] h-[80%] rounded-lg shadow-lg overflow-hidden">
+        <div className="relative bg-[#cccccc] w-[100%] md:w-[40%] mt-5 h-[80%] rounded-lg shadow-lg overflow-hidden">
           <img
             src="/img/banner_1.webp"
             className="w-full hover:scale-125 transition-all duration-500"
             alt="Men's Collection"
           />
           <div className="absolute bottom-10 left-10">
-            <h1 className="text-3xl font-bold">Suits and Formal wear</h1>
+            <h1 className="text-xl md:text-3xl font-bold">Suits and Formal wear</h1>
             <button className="border-2 cursor-pointer border-black rounded p-2 px-5 mt-5">
               Shop Now
             </button>
@@ -58,14 +58,14 @@ const Home = () => {
         </div>
 
         {/* Right Banner */}
-        <div className="relative bg-[#f8f9fa] w-[40%] h-[80%] rounded-lg shadow-lg overflow-hidden">
+        <div className="relative bg-[#f8f9fa] w-[100%] md:w-[40%] mt-5 h-[80%] rounded-lg shadow-lg overflow-hidden">
           <img
             src="/img/banner_2.webp"
             className="w-full hover:scale-125 transition-all duration-500"
             alt="Women's Collection"
           />
           <div className="absolute bottom-10 left-10">
-            <h1 className="text-3xl font-bold">Suits and Formal wear</h1>
+            <h1 className="text-xl md:text-3xl font-bold">Suits and Formal wear</h1>
             <button className="border-2 cursor-pointer border-black rounded p-2 px-5 mt-5">
               Shop Now
             </button>

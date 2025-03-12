@@ -34,7 +34,7 @@ const Hero = () => {
           <span>New Trend</span>
         </div>
 
-        <h1 className="text-[70px] leading-[1.1] font-light mb-4 mt-10">
+        <h1 className="text-[30px] md:text-[70px] leading-[1.1] font-light mb-4 mt-10">
           AUTUMN SALE STYLISH <br />
           <span className="font-semibold">WOMEN'S</span>
         </h1>
